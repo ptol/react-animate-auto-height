@@ -11,7 +11,7 @@
   "scripts": {
     "test": "jest --config jestconfig.json",
     "dev": "jest --watch --config jestconfig.json",
-    "build": "npm run clean && microbundle -f es,cjs --no-compress -i src/index.ts",
+    "build": "npm run clean && microbundle -f es,cjs --no-compress -i src/index.tsx",
     "prettier": "prettier --write \"src/**/*.tsx\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
     "clean": "rimraf lib/*",
@@ -22,19 +22,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/simmor-store/react-simmor.git"
+    "url": "git+https://github.com/ptol/react-animate-auto-height.git"
   },
   "keywords": [
-    "TypeScript",
-    "react",
-    "store"
+    "react"
   ],
   "author": "ptol",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/simmor-store/react-simmor/issues"
+    "url": "https://github.com/ptol/react-animate-auto-height/issues"
   },
-  "homepage": "https://github.com/simmor-store/react-simmor#readme",
+  "homepage": "https://github.com/ptol/react-animate-auto-height#readme",
   "peerDependencies": {
     "react": ">=16.8"
   },
