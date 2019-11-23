@@ -1,6 +1,6 @@
-* Examples
+# Examples
 
-```ts
+```tsx
 export const Toggle = () => {
   const [visible, setVisible] = useState(false)
   return (
@@ -14,7 +14,7 @@ export const Toggle = () => {
 }
 ```
 
-```ts
+```tsx
 export const Counter = () => {
   const [count, setCount] = useState(1)
   return (
