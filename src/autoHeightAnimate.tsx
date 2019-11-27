@@ -9,8 +9,7 @@ export const AutoHeightAnimate = (props: {
   style?: CSSProperties
   children: React.ReactNode
 }) => {
-  const ref = useRef<HTMLDivElement>(null)
-  const height = useElementHeight(ref, props.heightState, props.height)
+  const [height, ref] = useElementHeight(props.heightState, props.height)
   return (
     <div
       style={{

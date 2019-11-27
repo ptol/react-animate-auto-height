@@ -1,11 +1,11 @@
-import React, {useEffect, useState} from "react"
+import React, {useEffect, useRef, useState} from "react"
 import {HeightProperty} from "csstype"
 
 export const useElementHeight = (
-  ref: React.RefObject<HTMLDivElement>,
   heightState: any,
   customHeight?: HeightProperty<number>,
-) => {
+): [HeightProperty<number>, React.RefObject<any>] => {
+  const ref = useRef<any>(null)
   const [height, setHeight] = useState<HeightProperty<number>>(0)
   useEffect(() => {
     if (ref.current) {
@@ -16,5 +16,5 @@ export const useElementHeight = (
       )
     }
   }, [heightState])
-  return height
+  return [height,ref]
 }

@@ -37,8 +37,7 @@ export const Counter = () => {
 ```tsx
 export const ToggleWithHook = () => {
   const [visible, setVisible] = useState(false)
-  const ref = useRef<HTMLDivElement>(null)
-  const height = useElementHeight(ref, visible)
+  const [height, ref] = useElementHeight(visible)
   return (
     <div style={{border: '1px solid grey', padding: 10}}>
       <button onClick={() => setVisible(x => !x)}>toggle</button>
