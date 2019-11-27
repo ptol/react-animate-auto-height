@@ -16,5 +16,5 @@ export const useElementHeight = (
       )
     }
   }, [heightState])
-  return [height,ref]
+  return [height, ref]
 }
