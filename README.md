@@ -34,7 +34,7 @@ export const Counter = () => {
 
 ## Using useElementHeight hook
 
-```
+```tsx
 export const ToggleWithHook = () => {
   const [visible, setVisible] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
