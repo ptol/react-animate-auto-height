@@ -12,7 +12,7 @@
     "test": "jest --config jestconfig.json",
     "dev": "jest --watch --config jestconfig.json",
     "build": "npm run clean && microbundle -f es,cjs --no-compress -i src/index.tsx",
-    "prettier": "prettier --write \"src/**/*.tsx\" \"src/**/*.js\"",
+    "prettier": "prettier --write \"src/**/*.tsx\" \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
     "clean": "rimraf lib/*",
     "prepublishOnly": "npm run lint && npm run build",
