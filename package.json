@@ -1,6 +1,6 @@
 {
   "name": "react-animate-auto-height",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "React component to automatically animate height",
   "files": [
     "lib/*"
