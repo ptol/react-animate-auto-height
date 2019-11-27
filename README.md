@@ -49,14 +49,5 @@ export const ToggleWithHook = () => {
       </div>
     </div>
   )
-
-  return (
-    <div style={{border: '1px solid grey', padding: 10}}>
-      <button onClick={() => setVisible(x => !x)}>toggle</button>
-      <AutoHeightAnimate heightState={visible} height={visible ? 'auto': 0}>
-        <div>Content</div>
-      </AutoHeightAnimate>
-    </div>
-  )
 }
 ```
